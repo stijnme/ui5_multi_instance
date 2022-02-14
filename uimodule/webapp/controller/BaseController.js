@@ -1,5 +1,8 @@
 sap.ui.define(
-    ["sap/ui/core/mvc/Controller", "sap/ui/core/routing/History", "sap/ui/core/UIComponent", "net/expertum/MultiInstance/model/formatter"],
+    ["sap/ui/core/mvc/Controller",
+     "sap/ui/core/routing/History",
+     "sap/ui/core/UIComponent",
+     "net/expertum/MultiInstance/model/formatter"],
     /**
      * @param {typeof sap.ui.core.mvc.Controller} Controller
      * @param {typeof sap.ui.core.routing.History} History
