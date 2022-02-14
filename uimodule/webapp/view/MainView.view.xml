@@ -1,11 +1,18 @@
-<mvc:View controllerName="net.expertum.MultiInstance.controller.MainView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
-    <Shell id="shell">
-        <App id="app">
-            <pages>
-                <Page id="page" title="{i18n>title}">
-                    <content />
-                </Page>
-            </pages>
-        </App>
-    </Shell>
+<mvc:View controllerName="net.expertum.MultiInstance.controller.MainView" 
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m">
+
+	<TabContainer items="{ path: '/BPCollection' }" id="myTabContainer"
+					showAddNewButton="true"
+					class="sapUiResponsiveContentPadding sapUiResponsivePadding--header"
+					addNewButtonPress="addNewButtonPressHandler" itemClose="itemCloseHandler">
+		<items>
+			<TabContainerItem
+				name="{FirstName}">
+                <content>
+				</content>
+			</TabContainerItem>
+		</items>
+	</TabContainer>
 </mvc:View>
